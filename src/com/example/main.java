@@ -9,6 +9,9 @@ public class main {
 		Calc calc= new Calc(array);
 		calc.calc();
 		
+	      Sort sort = new Sort(array);
+	      sort.sort();
+		
 		Output output = new Output(array);
 		output.output();
 	}

@@ -1,6 +1,6 @@
 package com.example;
 
-public class Product {
+public class Product implements Comparable<Product>{
    private String name;
    private int su, buyprice, selprice, transport, money;
    private double rate;
@@ -74,6 +74,11 @@ public class Product {
       return String.format("%-10s    %,7d     %,7d      %,7d       %,7d   %,15d   %10.2f",
             name, su, selprice, buyprice, transport, money, rate);
    }
+
+@Override
+public int compareTo(Product other) {
+	return (int)(other.rate=this.rate);
+}
    
    
 }
